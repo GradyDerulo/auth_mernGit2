@@ -6,8 +6,10 @@ import axios from "axios";
 // ICi on a une même gestion d'erreur et de loading pour l'authentification
 
 					//Tres important
-/* const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api/auth"; */
-const API_URL = "http://localhost:5000/api/auth"
+
+					//RENDER : https://auth-merngit2.onrender.com/login
+const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api/auth"; 
+/* const API_URL = "http://localhost:5000/api/auth" */
 
 axios.defaults.withCredentials = true;  //ça marche avec cors de backend qui a lui aussi Credentials à true
 
